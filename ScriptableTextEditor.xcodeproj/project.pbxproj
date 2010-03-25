@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		94150DE4115C0FE4005E7B75 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94150DE3115C0FE4005E7B75 /* Python.framework */; };
+		94150E08115C110A005E7B75 /* STEPluginExecutor.py in Resources */ = {isa = PBXBuildFile; fileRef = 94150E01115C110A005E7B75 /* STEPluginExecutor.py */; };
+		94150E09115C110A005E7B75 /* STEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94150E03115C110A005E7B75 /* STEAppDelegate.m */; };
+		94150E0A115C110A005E7B75 /* STEPluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94150E05115C110A005E7B75 /* STEPluginManager.m */; };
+		94150E0B115C110A005E7B75 /* STETextDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 94150E07115C110A005E7B75 /* STETextDocument.m */; };
+		94150E1F115C1179005E7B75 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94150E1D115C1179005E7B75 /* MainMenu.xib */; };
+		94150E20115C1179005E7B75 /* TextDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94150E1E115C1179005E7B75 /* TextDocument.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FBA07B3F13500E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		2564AD2C0F5327BB00F57823 /* ScriptableTextEditor_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptableTextEditor_Prefix.pch; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D15AC360486D014006FF6A4 /* ScriptableTextEditor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ScriptableTextEditor-Info.plist"; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* ScriptableTextEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScriptableTextEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94150DE3115C0FE4005E7B75 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+		94150E01115C110A005E7B75 /* STEPluginExecutor.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = STEPluginExecutor.py; sourceTree = "<group>"; };
+		94150E02115C110A005E7B75 /* STEAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STEAppDelegate.h; sourceTree = "<group>"; };
+		94150E03115C110A005E7B75 /* STEAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STEAppDelegate.m; sourceTree = "<group>"; };
+		94150E04115C110A005E7B75 /* STEPluginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STEPluginManager.h; sourceTree = "<group>"; };
+		94150E05115C110A005E7B75 /* STEPluginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STEPluginManager.m; sourceTree = "<group>"; };
+		94150E06115C110A005E7B75 /* STETextDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STETextDocument.h; sourceTree = "<group>"; };
+		94150E07115C110A005E7B75 /* STETextDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STETextDocument.m; sourceTree = "<group>"; };
+		94150E1D115C1179005E7B75 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		94150E1E115C1179005E7B75 /* TextDocument.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextDocument.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				94150DE4115C0FE4005E7B75 /* Python.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+				94150DE3115C0FE4005E7B75 /* Python.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				13E42FBA07B3F13500E4EEF1 /* CoreData.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* ScriptableTextEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* ScriptableTextEditor */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = ScriptableTextEditor;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				94150E0D115C1116005E7B75 /* Typical Classes */,
+				94150E0E115C1122005E7B75 /* Plugin-related Classes */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2564AD2C0F5327BB00F57823 /* ScriptableTextEditor_Prefix.pch */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94150E1D115C1179005E7B75 /* MainMenu.xib */,
+				94150E1E115C1179005E7B75 /* TextDocument.xib */,
+				8D15AC360486D014006FF6A4 /* ScriptableTextEditor-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94150E0D115C1116005E7B75 /* Typical Classes */ = {
+			isa = PBXGroup;
+			children = (
+				94150E02115C110A005E7B75 /* STEAppDelegate.h */,
+				94150E03115C110A005E7B75 /* STEAppDelegate.m */,
+				94150E06115C110A005E7B75 /* STETextDocument.h */,
+				94150E07115C110A005E7B75 /* STETextDocument.m */,
+			);
+			name = "Typical Classes";
+			sourceTree = "<group>";
+		};
+		94150E0E115C1122005E7B75 /* Plugin-related Classes */ = {
+			isa = PBXGroup;
+			children = (
+				94150E04115C110A005E7B75 /* STEPluginManager.h */,
+				94150E05115C110A005E7B75 /* STEPluginManager.m */,
+				94150E01115C110A005E7B75 /* STEPluginExecutor.py */,
+			);
+			name = "Plugin-related Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* ScriptableTextEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "ScriptableTextEditor" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScriptableTextEditor;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ScriptableTextEditor;
+			productReference = 8D15AC370486D014006FF6A4 /* ScriptableTextEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "ScriptableTextEditor" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* ScriptableTextEditor */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* ScriptableTextEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94150E08115C110A005E7B75 /* STEPluginExecutor.py in Resources */,
+				94150E1F115C1179005E7B75 /* MainMenu.xib in Resources */,
+				94150E20115C1179005E7B75 /* TextDocument.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				94150E09115C110A005E7B75 /* STEAppDelegate.m in Sources */,
+				94150E0A115C110A005E7B75 /* STEPluginManager.m in Sources */,
+				94150E0B115C110A005E7B75 /* STETextDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C05733C808A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ScriptableTextEditor_Prefix.pch;
+				INFOPLIST_FILE = "ScriptableTextEditor-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = ScriptableTextEditor;
+			};
+			name = Debug;
+		};
+		C05733C908A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ScriptableTextEditor_Prefix.pch;
+				INFOPLIST_FILE = "ScriptableTextEditor-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = ScriptableTextEditor;
+			};
+			name = Release;
+		};
+		C05733CC08A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C05733CD08A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "ScriptableTextEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733C808A9546B00998B17 /* Debug */,
+				C05733C908A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "ScriptableTextEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733CC08A9546B00998B17 /* Debug */,
+				C05733CD08A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}
