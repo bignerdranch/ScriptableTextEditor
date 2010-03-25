@@ -48,19 +48,16 @@
 	
 	// load the main script into the python runtime
 	FILE *mainFile = fopen([scriptPath UTF8String], "r");
-	return (PyRun_SimpleFileEx(mainFile, (char *)[[scriptPath lastPathComponent] UTF8String], 1) == 0);
+	return (PyRun_SimpleFile(mainFile, (char *)[[scriptPath lastPathComponent] UTF8String]) == 0);
 }
 
 // returns YES on success
 - (BOOL) loadScriptAtPath:(NSString*)scriptPath runFunction:(NSString*)functionName withArguments:(NSArray*)arguments {
-	Class STEPluginExecutor = NSClassFromString(@"STEPluginExecutor");
-	id executor = [[[STEPluginExecutor alloc] init] autorelease];
+	Class executor = NSClassFromString(@"STEPluginExecutor");
 	
-	BOOL success = [executor loadModuleAtPath:scriptPath
-								 functionName:functionName
-									arguments:arguments];
-	
-	return success;
+	return [executor loadModuleAtPath:scriptPath
+						 functionName:functionName
+							arguments:arguments];
 }
 
 @end

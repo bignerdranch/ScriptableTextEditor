@@ -12,6 +12,7 @@ from AppKit import *
 import imp
 
 class STEPluginExecutor(NSObject):
+	@classmethod
 	def loadModuleAtPath_functionName_arguments_(self, path, func, args):
 		
 		f = open(path)
