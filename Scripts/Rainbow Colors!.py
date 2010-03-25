@@ -23,20 +23,5 @@ def main(textView):
 
 
 def getColors():
-	colors = None
-	
-	color_list = NSColorList.colorListNamed_('Crayons')
-	
-	if color_list is None:
-		color_list = NSColorList.colorListNamed_('Apple')
-	
-	if color_list is None:
-		color_list = NSColorList.availableColorLists().lastObject()
-	
-	if color_list is None:
-		color_names = ['red', 'orange', 'blue', 'green', 'purple', 'yellow']
-		colors = [getattr(NSColor, color_name + 'Color', None)() for color_name in color_names]
-	else:
-		colors = [color_list.colorWithKey_(color_key) for color_key in color_list.allKeys()]
-	
-	return colors
+	color_names = ['red', 'brown', 'blue', 'green', 'purple']
+	return [getattr(NSColor, color_name + 'Color', None)() for color_name in color_names]

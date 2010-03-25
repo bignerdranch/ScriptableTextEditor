@@ -13,13 +13,13 @@ def main(textView):
 	data = NSData.dataWithBytes_length_(raw_str, len(raw_str))
 	
 	# turn into a text attachment
-	fw = NSFileWrapper.alloc().initRegularFileWithContents_(data)
-	fw.setFilename_('lolcat.jpg')
-	fw.setPreferredFilename_('lolcat.jpg')
-	ta = NSTextAttachment.alloc().init()
-	ta.setFileWrapper_(fw)
-	ats = NSAttributedString.attributedStringWithAttachment_(ta)
+	fileWrapper = NSFileWrapper.alloc().initRegularFileWithContents_(data)
+	fileWrapper.setFilename_('lolcat.jpg')
+	fileWrapper.setPreferredFilename_('lolcat.jpg')
+	textAttachment = NSTextAttachment.alloc().init()
+	textAttachment.setFileWrapper_(fileWrapper)
+	attrString = NSAttributedString.attributedStringWithAttachment_(textAttachment)
 	
 	# insert into text view at current insertion-point
-	range = textView.selectedRange()
-	textView.textStorage().replaceCharactersInRange_withAttributedString_(range, ats)
+	r = textView.selectedRange()
+	textView.textStorage().replaceCharactersInRange_withAttributedString_(r, attrString)
