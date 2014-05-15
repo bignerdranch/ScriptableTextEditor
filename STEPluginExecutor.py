@@ -14,7 +14,7 @@ import imp
 class STEPluginExecutor(NSObject):
 	@classmethod
 	def loadModuleAtPath_functionName_arguments_(self, path, func, args):
-		
+
 		f = open(path)
 		try:
 			mod = imp.load_module('plugin', f, path, (".py", "r", imp.PY_SOURCE))
@@ -26,5 +26,5 @@ class STEPluginExecutor(NSObject):
 		finally:
 			f.close()
 			return NO
-		
+
 		return YES

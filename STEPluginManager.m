@@ -36,16 +36,16 @@
 	// if deja-vu'ing, skip the rest
 	if (Py_IsInitialized())
 		return YES;
-	
+
 	// just in case /usr/bin/ is not in the user's path, although it should be
 	Py_SetProgramName("/usr/bin/python");
-	
+
 	// set up the basic python environment.
 	Py_Initialize();
-	
+
 	// get path to our python entrypoint
 	NSString *scriptPath = [[NSBundle mainBundle] pathForResource:@"STEPluginExecutor" ofType:@"py"];
-	
+
 	// load the main script into the python runtime
 	FILE *mainFile = fopen([scriptPath UTF8String], "r");
 	return (PyRun_SimpleFile(mainFile, (char *)[[scriptPath lastPathComponent] UTF8String]) == 0);
@@ -54,7 +54,7 @@
 // returns YES on success
 - (BOOL) loadScriptAtPath:(NSString*)scriptPath runFunction:(NSString*)functionName withArguments:(NSArray*)arguments {
 	Class executor = NSClassFromString(@"STEPluginExecutor");
-	
+
 	return [executor loadModuleAtPath:scriptPath
 						 functionName:functionName
 							arguments:arguments];
