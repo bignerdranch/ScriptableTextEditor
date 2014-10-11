@@ -23,8 +23,8 @@ class STEPluginExecutor(NSObject):
 				realfunc(*tuple(args))
 		except Exception as e:
 			NSRunAlertPanel('Script Error', '%s' % e, None, None, None)
+			return NO
 		finally:
 			f.close()
-			return NO
 		
 		return YES
